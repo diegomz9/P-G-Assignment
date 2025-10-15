@@ -13,7 +13,6 @@ ORDER BY
 LIMIT 5;
 
 -- 2. Average delivery time per traffic condition, by restaurant area and cuisine type.
---VER ESTO--------------------------------
 SELECT
     d.traffic_condition,
     r.area AS restaurant_area,
@@ -57,9 +56,34 @@ LIMIT 10;
 
 
 -- 4. The most profitable restaurant area in the last 3 months, defined as the area with the highest total order value.
-
-
+SELECT 
+    r.area AS restaurant_area,
+    SUM(o.order_value) AS total_order_value
+FROM 
+    orders AS O
+JOIN 
+    deliveries AS d on o.delivery_id = d.delivery_id
+JOIN 
+    restaurants AS r ON o.restaurant_id = r.restaurant_id
+WHERE 
+    d.order_placed_at >= DATE('now', '-3 months')
+GROUP BY 
+    r.area
+ORDER BY 
+    total_order_value DESC
+LIMIT 1;
 
 -- 5. Identify whether any delivery people show an increasing trend in average delivery time.
-
+SELECT
+    d.delivery_person_id,
+    STRFTIME('%Y-%m', d.order_placed_at) AS month,
+    AVG(d.delivery_time_min) AS monthly_avg_delivery_time
+FROM
+    deliveries AS d
+GROUP BY
+    d.delivery_person_id,
+    month
+ORDER BY
+    d.delivery_person_id,
+    month;
 
