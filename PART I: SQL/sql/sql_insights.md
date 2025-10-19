@@ -37,5 +37,3 @@ ORDER BY
 LIMIT 10;
 
 ```
-LIMIT 10;
-
