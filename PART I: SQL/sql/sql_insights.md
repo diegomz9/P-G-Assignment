@@ -15,7 +15,7 @@ ORDER BY
 ```
 
 2- Was the delivery late or was the restaurant fault? 
-Shows top 10 restaurants with the highest delivery time and the average preparation time. 
+Shows top 10 restaurants with the highest delivery time and the average preparation time. This can help us identity what needs to be fixed to reduce wait time for final clients. 
 
 ```sql
 SELECT
