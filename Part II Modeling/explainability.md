@@ -26,5 +26,5 @@ Courier_Experience_yrs . 309 .  Courier experience is a significant factor.
 
 ## Actionable Takeaways
 
-1.  **The business cannot control distance (#1), but it can control Preparation_Time_min (#2). Optimizing kitchen to courier process is the biggest internal opportunity for improvement.
-2.  ** Courier_Experience_yrs (#3) is a powerful predictor. The platform could use this for more accurate arrivals. 
+1.  The business cannot control distance (#1), but it can control Preparation_Time_min (#2). Optimizing kitchen to courier process is the biggest internal opportunity for improvement.
+2.  Courier_Experience_yrs (#3) is a powerful predictor. The platform could use this for more accurate arrivals. 
