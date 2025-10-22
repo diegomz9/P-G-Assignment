@@ -1,8 +1,8 @@
 PART II: Modeling
-
-How to run code:
+------------------------------------------------------------------
+How to run code in model_pipeline:
 Make sure the following are present:
-repository/
+model_pipeline/
 │
 ├── Food_Delivery_Times.csv
 ├── train.py                  
@@ -17,3 +17,10 @@ pip install -r requirements.txt
 2. Run train.py
 
 3. Run predict.py
+--------------------------------------------------------------------
+
+• EDA_report.md: Key patterns, outliers, and assumptions you made.
+• model_notes.md: Your modeling logic, metric choice, and tuning approach
+• explainability.md: Insights from feature importance tools
+• error_insights.md: Insights on when and why your model fails
+• strategic_reflections.md
