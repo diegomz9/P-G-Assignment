@@ -3,11 +3,11 @@
 
 ## Key Patterns & Findings
 
-My initial exploration focused on understanding the relationships between the features and the target variable `Delivery_Time_min`.
+My initial exploration focused on understanding the relationships between the features and the target variable Delivery_Time_min.
 
 * **Target:** There are late deliveries that are the source of customer complaints and are the single most important events for the model to predict.
-* **Predictors:** Based on the output, `Distance_km` and `Preparation_Time_min` show a strong correlation with delivery time. Before running the code, when overviewing the columns, these two were the my top features. 
-* **Categorical Impact:** `Weather` conditions like 'Snowy' or 'Rainy' and `Traffic_Level` 'High' are clearly associated with higher average delivery times compared to 'Clear' or 'Low' conditions. These were transformed to binary values for the model to interpret them correctly. 
+* **Predictors:** Based on the output, Distance_km and Preparation_Time_min show a strong correlation with delivery time. Before running the code, when overviewing the columns, these two were the my top features. 
+* **Categorical Impact:** Weather conditions like 'Snowy' or 'Rainy' and Traffic_Level 'High' are clearly associated with higher average delivery times compared to 'Clear' or 'Low' conditions. These were transformed to binary values for the model to interpret them correctly. 
 
 ## 2. Outliers
 
