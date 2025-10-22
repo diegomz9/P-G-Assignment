@@ -1,1 +1,19 @@
 PART II: Modeling
+
+How to run code:
+Make sure the following are present:
+repository/
+│
+├── Food_Delivery_Times.csv
+├── train.py                  
+├── predict.py                
+├── requirements.txt          
+└── README.md
+
+
+1. Install the requirements. Run the following code on terminal
+pip install -r requirements.txt
+
+2. Run train.py
+
+3. Run predict.py
